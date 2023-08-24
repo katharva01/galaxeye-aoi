@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Component1 from './Component1';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <p style={{fontWeight:"bolder"}}>Draw polygon on below map using controls present on right hand side of map</p>
+        <p>Area in blue color : <b style={{color:"blue"}}>Your selected polygon</b></p>
+        <p>Area in red color : <b style={{color:"red"}}>Tiles intersecting with your selected polygon</b></p>
+      </div>
+      <Component1/>
     </div>
   );
 }
